@@ -29,6 +29,7 @@
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
     "ts-loader": "^8.0.1",
+    "typedoc": "^0.17.8",
     "typescript": "^3.9.7",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
@@ -38,7 +39,10 @@
   "scripts": {
     "build": "webpack",
     "build:production": "webpack --mode=production",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "docs": "npm run docs:generate && npm run docs:open",
+    "docs:generate": "typedoc --out docs",
+    "docs:open": "open docs/index.html"
   },
   "keywords": [],
   "author": "",

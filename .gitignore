@@ -1,3 +1,4 @@
 node_modules/
 dist/
+docs/
 src/assets/styles/**/*.scss.d.ts

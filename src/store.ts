@@ -1,4 +1,4 @@
-import * as Root from "../reducers/root"
+import * as Root from "./reducers/root"
 import {createStore, combineReducers} from "redux"
 import {useSelector} from "react-redux"
 
