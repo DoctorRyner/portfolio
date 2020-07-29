@@ -1,0 +1,44 @@
+:root {
+  font-family: "Microsoft YaHei";
+}
+
+body {
+  background-color: #111111;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 76.8rem);
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.landing__bg {
+  display: block;
+  width: 100%;
+}
+
+.landing__title {
+  transform: translateY(-19.5rem);
+  position: absolute;
+}
+
+.landing__nav {
+  position: relative;
+}
+
+.landing__nav__items {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  left: 2rem;
+  width: calc(100% - 4rem);
+  
+  justify-content: flex-start;
+}
+
+.landing__nav__items__first {
+  margin-right: auto;
+}

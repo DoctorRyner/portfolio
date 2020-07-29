@@ -1,8 +1,9 @@
 {
-  "name": "example-landing",
+  "name": "cv",
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -25,6 +26,8 @@
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
+    "normalize.css": "^8.0.1",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
@@ -39,10 +42,11 @@
   "scripts": {
     "build": "webpack",
     "build:production": "webpack --mode=production",
+    "build:test": "cd dist && http-server -o --port 8082 --proxy http://localhost:8082?",
     "start": "webpack-dev-server --open",
     "docs": "npm run docs:generate && npm run docs:open",
     "docs:generate": "typedoc --out docs",
-    "docs:open": "open docs/index.html"
+    "docs:open": "cd docs && http-server -o --port 8081"
   },
   "keywords": [],
   "author": "",
