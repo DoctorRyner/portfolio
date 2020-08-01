@@ -2,11 +2,8 @@
 // Please do not change this file!
 interface CssExports {
   'landing__bg': string;
-  'landing__nav': string;
-  'landing__nav__items': string;
-  'landing__nav__items__first': string;
-  'landing__title': string;
-  'wrapper': string;
+  'landing__hands': string;
+  'landing__navigation': string;
 }
 export const cssExports: CssExports;
 export default cssExports;
