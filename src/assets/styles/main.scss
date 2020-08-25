@@ -1,8 +1,15 @@
 :root {
   font-size: 62.5%;
-  font-family: Roboto;
 }
 
 body {
   font-size: 1.6em;
+}
+
+label {
+  min-height: 0vw;
+}
+
+p {
+  min-height: 0vw;
 }

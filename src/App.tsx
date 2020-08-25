@@ -2,7 +2,7 @@ import * as React from "react"
 import * as Root from "./pages/Root"
 import * as NotFound from "./pages/NotFound"
 import * as LandingsFirst from "./pages/landings/First"
-import * as TheaterOfThunder from "./pages/websites/TheaterOfThunder"
+import * as TheaterOfThunder from "./pages/websites/theater-of-thunder"
 
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 import {Provider} from "react-redux"

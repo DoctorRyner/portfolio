@@ -1,0 +1,125 @@
+.wrapper {
+  font-family: "Noto Sans";
+  position: relative;
+  width: min(100%, 768px);
+  margin: 0 auto;
+  color: white;
+  background-color: #111111;
+}
+
+.landing {  
+  &__bg {
+    position: absolute;
+    z-index: -9999;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    img:last-child {
+      // Fix the difference with bg image sizes that creates
+      // a gup between on smaller devices
+      margin-top: -1px;
+    }
+  }
+
+  &__header_bar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    width: 95%;
+    margin: 2.5%;
+
+    img:first-child {
+      margin-right: auto;
+    }
+
+    img {
+      display: inline-block;
+      cursor: pointer;
+      width: 8.7%;
+    }
+  }
+
+  &__hands {
+    img {position: absolute}
+
+    img:first-child {
+      z-index: 1;
+      width: 23.5%;
+      left: 36%;
+      top: 22.1%;
+    }
+
+    img:last-child {
+      z-index: 0;
+      width: 24%;
+      left: 37.2%;
+      top: 22.2%;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    margin-top: 77%;
+    width: 100%;
+  }
+
+  &__title {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  &__watch_play_btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3%;
+
+    img {
+      position: absolute;
+      z-index: 0;
+      width: 35%;
+    }
+
+    label {
+      position: relative;
+      z-index: 1;
+      margin-top: 4%;
+      font-size: min(4.6vw, 32px);
+    }
+  }
+
+  &__play_to_get_rewards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 6%;
+
+    &__strokes {
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0.93);
+    }
+
+    label {
+      margin-top: 3.5%;
+      font-style: italic;
+      color: #F8F5FE;
+      text-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.6);
+      font-size: min(3.3vw, 2.55rem);
+    }
+
+    &__info_icon {
+      position: absolute;
+      top: 92%;
+      right: 27%;
+      width: 4.32%;
+    }
+  }
+}
